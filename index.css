@@ -1,0 +1,96 @@
+body{
+	padding: 2% 10%;
+	background-color: #347bed;
+}
+
+#pageTitle{
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Goldman';
+	font-weight: 700;
+	color: white;
+}
+
+#pageSubtitle{
+	font-size: 1em;
+	text-align: center;
+	font-family: 'Goldman';
+	font-weight: 400;
+	color: white;
+}
+
+#globalCont{
+	box-shadow: 0 0 20px #717171
+}
+
+.navBar{
+	background: red;
+	display: flex;
+	justify-content: space-around;
+	height: 75px;
+}
+
+.navBarItem{
+	background: none;
+	border: none;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: white;
+	flex:1;
+}
+
+.navBarItem:focus{
+	outline: none
+}
+
+.active{
+	background: white;
+	color: #347bed;
+}
+
+.tab{
+	background: white;
+	padding: 50px 20px;
+}
+
+#team-tab{
+	margin: auto;
+}
+
+.tabulator-header, .tabulator-col-content{
+  background: red !important;
+  color: white;
+}
+
+.tabulator-row.tabulator-row-even{
+	background-color: #e3f1ff !important;
+}
+
+.tabulator-row.tabulator-selectable:hover{
+	background-color: #6cc4f3 !important;
+}
+
+#overview{
+	text-align: center;
+	padding-top: 80px;
+}
+
+.overviewCont{
+	margin-bottom: 80px;
+}
+
+.overviewResult{
+	font-size: 8em;
+	font-weight: bold;
+	margin-top: -40px;
+}
+
+.overviewExplanation{
+	width: 70%;
+	margin:auto;
+	font-size: 2em;
+	margin-top: -20px;
+	padding-bottom: 70px;
+	border-bottom: 2px red solid
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1 id="pageTitle">BAC Run To Twickenham</h1>
+		<p id="pageSubtitle">Run fatties</p>
+		<div id="globalCont">
+			<div class="navBar">
+				<button class="navBarItem" id="overviewBtn" onclick="openTab('overview')">Overview</button>
+				<button class="navBarItem" id="teamGraphBtn" onclick="openTab('teamGraph')">Team Graph</button>
+				<button class="navBarItem" id="teamTableBtn" onclick="openTab('teamTable')">Team Table</button>
+				<button class="navBarItem" id="indivTableBtn" onclick="openTab('indivTable')">Individual Table</button>
+			</div>
+
+			<div class="tab" id="overview" style="display: block">
+				<div class="overviewCont">
+					<div class="overviewResult" id="kmRun">Loading</div>
+					<div class="overviewExplanation">Kilometers Run</div>
+				</div>
+				<div class="overviewCont">
+					<div class="overviewResult" id="runsLogged">Loading</div>
+					<div class="overviewExplanation">Runs Logged</div>
+				</div>
+				<div class="overviewCont">
+					<div class="overviewResult" id="timeSpent">Loading</div>
+					<div class="overviewExplanation">Time Spent Running</div>
+				</div>
+				<div class="overviewCont">
+					<div class="overviewResult" id="avgPace">Loading</div>
+					<div class="overviewExplanation">Average Pace (min/Km)</div>
+				</div>
+			</div>
+			<div class="tab" id="teamGraph" style="display: block">
+				<canvas id="myChart" style="position: relative; height:20vh; width:20vw"></canvas>
+			</div>
+			<div class="tab" id="teamTable" style="display: block;">
+				<div id="team-table"></div>
+			</div>
+			<div class="tab" id="indivTable" style="display: block">
+				<div id="indiv-table"></div>
+			</div>
+		</div>
+	</body>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://unpkg.com/tabulator-tables@4.8.4/dist/css/tabulator.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.4/dist/js/tabulator.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+
+	<script src='classesAndVars.js'></script>
+	<script src='interface.js'></script>
+	<script src='strava_api.js'></script>
+	<script src='processData.js'></script>
+	<script src='main.js'></script>
+
+
+</html>
