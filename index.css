@@ -1,5 +1,5 @@
 body{
-	padding: 2% 10%;
+	padding: 2% 5%;
 	background-color: #347bed;
 }
 
@@ -92,5 +92,9 @@ body{
 	margin-top: -20px;
 	padding-bottom: 70px;
 	border-bottom: 2px red solid
+}
+
+#myChart{
+	max-height: 60vh;
 }
 
