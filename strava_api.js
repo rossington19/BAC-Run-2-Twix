@@ -5,6 +5,7 @@ function getActivites(res){
     const activities_link = "https://www.strava.com/api/v3/clubs/774881/activities?per_page=50&access_token=" + accessToken;
     fetch(activities_link)
         .then(res => res.json())
+            // .then(res => getUniqueAthletes(res))
             .then(res => populateResults(res))
 }
 

@@ -10,6 +10,7 @@ function getUniqueAthletes(res){
             }
         }
     }
+    // console.log(uniqueAthletes)
 }
 
 

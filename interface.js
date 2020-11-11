@@ -123,8 +123,6 @@ function calcOverview(){
     var yTime = parseInt(xTime.substr(0,2));
     var zTime = yTime + ((time.getDate() - 1)*24);
     document.getElementById("timeSpent").innerHTML =  zTime + xTime.substr(2);
-    console.log(totalTime)
-    console.log(totalDistance)
     document.getElementById("avgPace").innerHTML = new Date(Math.round((totalTime*1000)/totalDistance)).toISOString().substr(14, 5);
 
 }

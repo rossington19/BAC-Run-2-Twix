@@ -43,5 +43,6 @@ const athleteTeams = [
     {"name": "Jason H.", "team":4},
     {"name": "Robert M.", "team":9},
     {"name": "hugo A.", "team":9},
-    {"name": "Edward S.", "team":3}
+    {"name": "Edward S.", "team":3},
+    {"name": "Chris C.", "team":6},
 ]
