@@ -45,6 +45,7 @@ function plotGraph(){
     var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
+        responsive: true,
         labels: teams.map(a => a.teamNum),
         datasets: [{
             data: teams.map(a => a.totalDistance),
