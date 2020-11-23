@@ -2,7 +2,7 @@ const auth_link = "https://www.strava.com/oauth/token";
 
 function getActivites(res){
     var accessToken = res.access_token;
-    const activities_link = "https://www.strava.com/api/v3/clubs/774881/activities?per_page=150&access_token=" + accessToken;
+    const activities_link = "https://www.strava.com/api/v3/clubs/774881/activities?per_page=250&access_token=" + accessToken;
     fetch(activities_link)
         .then(res => res.json())
             // .then(res => getUniqueAthletes(res))
